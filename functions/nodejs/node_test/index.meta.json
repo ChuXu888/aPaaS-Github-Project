@@ -1,0 +1,16 @@
+{
+  "apiID": "package_5c9964__c__function_aadgikq56migy",
+  "apiName": "node_test",
+  "label": {
+    "zh_CN": "node test",
+    "en_US": "node test"
+  },
+  "description": {
+    "zh_CN": "自定义函数",
+    "en_US": "Custom Function"
+  },
+  "longTaskMode": false,
+  "frontendSDKInvokable": false,
+  "input": [],
+  "output": []
+}
