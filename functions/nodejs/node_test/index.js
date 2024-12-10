@@ -11,9 +11,21 @@
  */
 module.exports = async function (params, context, logger) {
   // 日志功能
-  // logger.info(`${new Date()} 函数开始执行`);
+  logger.info(`${new Date()} 函数开始执行`);
 
-  logger.info("node test")
+  //application.globalVar
+  logger.info("===========application.globalVar")
+  const globalVarValues = {
+    float: await application.globalVar.getVar("globalParam_b41ba98b1e4"),
+    text: await application.globalVar.getVar("globalParam_41ba98b1e4f"),
+    date: await application.globalVar.getVar("globalParam_1ba98b1e4fc"),
+    single_record: await application.globalVar.getVar("globalParam_ba98b1e4fc0"),
+    multi_record: await application.globalVar.getVar("globalParam_a98b1e4fc07"),
+  };
+  logger.info(JSON.stringify(globalVarValues));
+
+  //打印入参
+  logger.info(params.demo_input_field)
 
   // 在这里补充业务代码
 }
