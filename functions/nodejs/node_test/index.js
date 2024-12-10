@@ -30,4 +30,5 @@ module.exports = async function (params, context, logger) {
   // 在这里补充业务代码
   logger.info("111")
   logger.info("hotfix-hotfix")
+  logger.info("hotfix-hotfix-hotfix")
 }
