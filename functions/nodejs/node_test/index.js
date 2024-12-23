@@ -26,7 +26,7 @@ module.exports = async function (params, context, logger) {
   logger.info(JSON.stringify(globalVarValues));
 
   // 在这里补充业务代码
-  logger.info("111")
+  logger.info("111-edit")
 
   var faasenv = process.env.KFaaSType
   logger.info(faasenv)
