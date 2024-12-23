@@ -13,6 +13,7 @@ module.exports = async function (params, context, logger) {
   // 日志功能
   logger.info(`${new Date()} 函数开始执行`);
 
+  
   logger.info("===========application.globalVar")
   const globalVarValues = {
     float: await application.globalVar.getVar("globalParam_b41ba98b1e4"),
