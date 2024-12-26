@@ -8,6 +8,7 @@
  * @param {Logger}  logger     日志记录器
  *
  * @return 函数的返回数据
+ * 
  */
 module.exports = async function (params, context, logger) {
   // 日志功能
