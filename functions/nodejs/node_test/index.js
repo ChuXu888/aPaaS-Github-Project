@@ -8,12 +8,14 @@
  * @param {Logger}  logger     日志记录器
  *
  * @return 函数的返回数据
+ * 
  */
 module.exports = async function (params, context, logger) {
   // 日志功能
   logger.info(`${new Date()} 函数开始执行`);
 
-  //application.globalVar
+
+  
   logger.info("===========application.globalVar")
   const globalVarValues = {
     float: await application.globalVar.getVar("globalParam_b41ba98b1e4"),
@@ -24,11 +26,8 @@ module.exports = async function (params, context, logger) {
   };
   logger.info(JSON.stringify(globalVarValues));
 
-  //打印入参
-  logger.info(params.demo_input_field)
-
   // 在这里补充业务代码
-  logger.info("111")
+  logger.info("111-edit")
 
   var faasenv = process.env.KFaaSType
   logger.info(faasenv)
