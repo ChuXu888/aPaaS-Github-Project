@@ -9,27 +9,27 @@
  *
  * @return 函数的返回数据
  */
-module.exports = async function (params, context, logger) {
+ module.exports = async function (params, context, logger) {
   // 日志功能
-  logger.info(`${new Date()} 函数开始执行`);
+  // logger.info(`${new Date()} 函数开始执行`);
 
   //application.globalVar
   logger.info("===========application.globalVar")
   const globalVarValues = {
-    float: await application.globalVar.getVar("globalParam_b41ba98b1e4"),
-    text: await application.globalVar.getVar("globalParam_41ba98b1e4f"),
-    date: await application.globalVar.getVar("globalParam_1ba98b1e4fc"),
-    single_record: await application.globalVar.getVar("globalParam_ba98b1e4fc0"),
-    multi_record: await application.globalVar.getVar("globalParam_a98b1e4fc07"),
+    float: await application.globalVar.getVar("globalParam_e2fbe64d853"),
+    text: await application.globalVar.getVar("globalParam_7f3acfe6f8b"),
+    date: await application.globalVar.getVar("globalParam_3acfe6f8b3b"),
+    record: await application.globalVar.getVar("globalParam_cfe6f8b3bd8"),
   };
   logger.info(JSON.stringify(globalVarValues));
 
   //打印入参
   logger.info(params.demo_input_field)
 
-  // 在这里补充业务代码
-  logger.info("111")
+  //返回出参
+  return {
+    "demo_output_field": "ni hao"
+  }
 
-  var faasenv = process.env.KFaaSType
-  logger.info(faasenv)
+  // 在这里补充业务代码
 }

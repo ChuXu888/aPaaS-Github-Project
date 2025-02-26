@@ -1,8 +1,8 @@
 {
-  "apiID": "package_66586d__c__function_aadhkzvuwyiba",
-  "apiName": "go_test",
+  "apiID": "package_b7mt6c0l__c__function_aadhhw2l6i4gu",
+  "apiName": "node_context_user",
   "label": {
-    "zh_CN": "go_test",
+    "zh_CN": "node_context_user",
     "en_US": ""
   },
   "description": {
@@ -10,7 +10,7 @@
     "en_US": "Custom Function"
   },
   "longTaskMode": false,
-  "frontendSDKInvokable": true,
+  "frontendSDKInvokable": false,
   "input": [],
   "output": []
 }
